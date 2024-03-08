@@ -1,0 +1,50 @@
+.kart{
+    border-bottom: 2px solid #aaaaac;
+    font-family: relaway;
+    margin-top: 50px;
+}
+
+.kart-price{
+    border-bottom: 2px solid #aaaaac;
+}
+
+.kart-products{
+    display: flex;
+    flex-direction: row;
+    gap: 375px;
+    background-color: #d1d1d1;
+    padding: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.kart-products p{
+    font-size: 23px;
+}
+
+.kart-products-details{
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    gap: 250px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.kart-products-details .title2{
+    width: 30%;
+}
+
+.kart-products-details img{
+    width: 100px;
+}
+
+.main-kart{
+    margin: 100px 0px 100px 0px;
+}
+
+.sub-kart{
+    width: 100%;
+}

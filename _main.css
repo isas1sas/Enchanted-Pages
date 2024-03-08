@@ -1,0 +1,144 @@
+@import url(../css/_reset.css);
+@import url(../css/_common.css);
+@import url(../css/_topbar.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root{
+    --primary-color-1:#CF84EA;
+    --primary-color-2:#E6C0F7;
+    --primary-color-3:#F4DCFF;
+
+    --sistem-color-warning:#EFE614;
+    --sistem-color-success:#469234;
+
+    --background-color-:#CF84EA;
+    --background-color-header-footer:var(--primary-color-1);
+    --background-color-topbar:var(--primary-color-1);
+}
+
+html, body {
+    font-family: 'Judson', 'Relaway';
+    background-color: #FFFFFF;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+} 
+
+.topbar{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.topbar .wrapper div{
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.topbar .wrapper div:nth-child(2){
+    justify-content: flex-end; 
+}
+
+.topbar a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.5s;
+    margin: 0px 15px 0px 0px;
+    font-size: 0.9rem;
+}
+
+.topbar a:hover{
+    color: #2F36CB;
+} 
+
+.searchbar{ 
+    background-color: #CF84EA;
+}
+
+.searchbar .wrapper{ 
+    align-items: center;
+}
+
+.searchbar .flex{
+    flex-flow: nowrap;
+    align-items: center;
+    flex-direction: row;
+}
+
+.searchbar .flex li{
+    justify-content: center;
+    width: 200px;
+    padding: 10px;
+    background-color: #CF84EA;
+    border: 1px solid #FFFFFF;
+    border-style: inset;
+}
+
+.searchbar .logo-container{
+    width: 150px;
+}
+
+.searchbar .logo-container img{
+    width: 90%;
+}
+
+.search-group .flex{
+    width: 100%;
+}
+
+.searchbar .search-group{
+    width: 100px;
+    margin: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.searchbar .search-group input{
+    border: none;
+    background-color: #FFFFFF;
+    padding: 15px 100px 15px 15px;
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.searchbar .search-group button{
+   position: absolute;
+   right: 0;
+   top: 5px;
+   background-color:#F4DCFF;
+   color: #333333;
+   font-family: Judson;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 20px;
+   box-sizing: border-box;
+}
+
+.navigation-bar{ 
+    background-color: #E6C0F7;
+    padding: 15px;
+}
+
+.navigation-bar a{
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.5s;
+    margin: 0px 25px 0px 0px;
+    background-image: image();
+}
+
+.navigation-bar a:hover{
+    color: #2F36CB;
+}
+
+.footer{
+    background-color: var(--background-color-header-footer);
+}

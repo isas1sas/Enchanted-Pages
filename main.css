@@ -1,0 +1,699 @@
+@import url(../css/_reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kalnia:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kalnia:wght@100..700&family=Satisfy&display=swap');
+
+
+:root{
+    --primary-color-1:#CF84EA;
+    --primary-color-2:#E6C0F7;
+    --primary-color-3:#F4DCFF;
+
+    --sistem-color-warning:#EFE614;
+    --sistem-color-success:#469234;
+
+    --background-color-:#CF84EA;
+    --background-color-header-footer:var(--primary-color-1);
+    --background-color-topbar:var(--primary-color-1);
+}
+
+html, body{
+    font-family: 'Arial', 'Relaway';
+    background-color: #FFFFFF;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+a{
+    transition: color 0.5s;
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #333333;
+}
+
+h1, h2, h3, h4, h5{
+    color: #333333;
+}
+
+h2{
+    font-family: Relaway;
+    font-size: 27px;
+    margin: 20px 0px 20px 0px;
+}
+
+.listing-book-identification{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.topbar{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.topbar .wrapper > div{
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    column-gap: 10px;
+}
+
+.phone-topbar{
+    display: flex;
+}
+
+.email-topbar{
+    display: flex;
+}
+
+.topbar .wrapper :nth-child(2){
+    justify-content: flex-end;
+}
+
+.topbar a{
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.5s;
+    margin: 0px 15px 0 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.topbar img{
+    display: flex;
+}
+
+.topbar a:hover{
+    color: #2F36CB;
+}
+
+.searchbar{
+    background-color: #CF84EA;
+    border-bottom: 1px solid #333333;
+    height: 180px;
+    display: flex;
+    position: relative;
+}
+
+.searchbar .wrapper{
+    align-items: center;
+}
+
+.searchbar .logo-container{
+    width: 180px;
+}
+
+.searchbar .logo-container img{
+    width: 100%;
+}
+
+.searchbar .search-group{
+    width: 100%;
+    margin: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.searchbar .search-group input{
+   border: #000000;
+   background-color: #FFFFFF;
+   padding: 20px 160px 20px 20px;
+   border-radius: 20px;
+   width: 75%;
+   box-sizing: border-box;
+}
+
+#listaProdutos{
+    display: none;
+    width: 90%;
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+}
+
+#listaProdutos li a{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #333333;
+    height: 60px;
+}
+
+span.item-name{
+    margin-left: 15px;
+}
+
+.searchbar .search-group button{
+   position: absolute;
+   right: 108px;
+   top: 4px;
+   background-color: #F4DCFF;
+   padding: 16px 30px;
+   color: #333333;
+   border: none;
+   border-radius: 20px;
+   box-sizing: border-box;
+}
+
+.wishlist{
+   display: flex;
+   margin: 20px;
+   gap: 20px;
+}
+
+.navigation-bar {
+   background-color: #E6C0F7;
+}
+
+.navigation-bar a{
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.5s;
+    margin: 0px 25px 0px 0px;
+    font-size: 19px;
+}
+
+.navigation-bar a:hover{
+    color: #FFFFFF;
+}
+
+.navigation-bar .wrapper{
+   height: 70px;
+   align-items: center;
+}
+
+.navigation-bar .wrapper nav{
+    display: flex;
+    column-gap: 20px;
+ }
+
+.navigation-bar .wrapper nav a{
+    display: flex;
+    column-gap: 20px;
+}
+
+.banner img{
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.highlights .wrapper{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 60px;
+}
+
+.highlights .wrapper a img{
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.highlights .wrapper img:hover{
+    background-color: #F4DCFF;
+   transition: backgroundcolor 1s;
+}
+
+.home-book-identification .wrapper{
+    color: #333333;
+    margin: 20px;
+    font-size: large;
+    font-weight: 100px;
+}
+
+.home-book-identification{
+    padding-top: 40px;
+}
+
+.main-list{
+    background-color: #E6C0F7;
+    margin-top: -36px;
+}
+
+.list-products{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-products .products{
+    width: 270px;
+}
+
+.list-products .products a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    text-decoration: none;
+}
+
+.list-products .products a:hover{
+   background-color: #F4DCFF;
+   transition: backgroundcolor 1s;
+}
+
+.list-products .products a img{
+   width: 150px;
+}
+
+.list-products .products a .title{
+    display: flex;
+    white-space: wrap;
+    height: 30px;
+    text-align: center;
+    line-height: 120%;
+    align-items: center;
+}
+
+.list-products .products a .price{
+   font-size: 1.5rem;
+}
+
+footer{
+    height: 200px;
+    background-color: #CF84EA;
+    border-bottom: 10px solid #333333;
+}
+
+footer .wrapper{
+    align-items: center;
+    padding: 25px 0;
+}
+
+footer .wrapper > div{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+footer .wrapper > div:nth-child(2){
+    align-items: end;
+    flex-direction: column;
+}
+
+footer .wrapper .navigation{
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+footer .wrapper .navigation a{
+    color: #333333;
+}
+
+.navigation .footer-menu a:hover{
+    color: #FFFFFF;
+}
+
+footer .wrapper .social-media a{
+    margin: 5px;
+}
+
+footer .wrapper .ep-media{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .logo-container{
+    width: 200px;
+}
+
+.social-media-text{
+    font-size: 18px;
+}
+
+.social-media{
+    margin: 10px 58px 0px 0px;
+}
+
+footer .logo-container img{
+    width: 80%;
+    justify-content: center;
+}
+
+.products-details-page{
+    display: flex;
+    margin: 160px 400px 100px 400px;
+    gap: 80px;
+}
+
+.products-details{
+    display: flex;
+    margin: 80px -90px 0px 0px;
+}
+
+.products-details img{
+    width: 400px;
+}
+
+.details-profile{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 110px 75px 0px 0px;
+    gap: 15px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0px 100px 100px 100px;
+    gap: 15px;
+}
+
+.title-details{
+    color: #333333;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'autograph signature';
+}
+
+.text-details{
+    color: #333333;
+    font-size: 18px;
+}
+
+.price-details{
+    color: #333333;
+    font-size: 22px;
+}
+
+.price-details-about-us{
+    color: #333333;
+    font-size: 23px;
+    font-family: satisfy;
+}
+
+.button-details button{
+    background-color: #CF84EA;
+    padding: 16px 30px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 20px 0px 0px 20px;
+}
+
+.image-profile img{
+    border-radius: 200px;
+    width: 300px;
+    margin: 50px 155px 160px 100px;
+}
+
+.ecommerce img{
+    width: 540px;
+}
+
+.ecommerce-5 img{
+    width: 400px;
+}
+
+.text-details-about-us{
+    color: #333333;
+    font-size: 20px; 
+}
+
+.text-details-about-us-2{
+    color: #333333;
+    font-size: 20px; 
+}
+
+.text-details-about-us-5{
+    color: #333333;
+    font-size: 20px; 
+    margin-top: -84px;
+}
+
+.details-group{
+    margin: 50px 400px 100px 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+}
+
+.description-details{
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.image-profile-2 img{
+    width: 300px;
+    margin: 50px 95px 50px 100px;
+    border: #000000;
+}
+
+.footer-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.footer-details-image img{
+    width: 35px;
+}
+
+.footer-details-text{
+    margin: 10px 0px 18px 0px;
+    font-size: 20px;
+}
+
+.products-details-about-us{
+    display: flex;
+    margin: 160px -90px 0px 0px;
+    padding: 20px;
+}
+
+.products-details-about-us-2{
+    display: flex;
+    margin: 62px -90px 0px 0px;
+    padding: 20px;
+}
+
+.icon-number{
+    font-size: 40px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    margin: -94px 26px 10px -109px;
+}
+
+.icon-number i{
+    margin-right: 20px;
+    display: flex;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 100px 100px 30px 100px;
+    color: #FFFFFF;
+    background-color: #c872e6;
+    font-family: museo-sans-rounded, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    justify-content: center;
+}
+
+.title-details-about-us{
+    color: #c872e6;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Kalnia;
+    margin: -72px 0px 40px 0px;
+}
+
+.icon-number-right{
+    font-size: 40px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    margin: -94px 26px 10px -109px;
+}
+
+.icon-number-right i{
+    margin-right: 20px;
+    display: flex;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #FFFFFF;
+    background-color: #c872e6;
+    border-radius: 100px 100px 30px 100px;
+    font-family: oi;
+    font-style: normal;
+    font-weight: 900;
+    justify-content: center;
+}
+
+.details-profile-profile{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 110px 75px 0px 0px;
+    gap: 15px;
+}
+
+.icon-number-right-1{
+    font-size: 40px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    margin: -94px 26px 10px -109px;
+}
+
+.icon-number-right-1 i{
+    margin-right: 20px;
+    display: flex;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #FFFFFF;
+    background-color: #f6dcff;
+    border-radius: 100px 100px 30px 100px;
+    font-family: oi;
+    font-style: normal;
+    font-weight: 900;
+    justify-content: center;
+}
+
+.title-details-about-us-1{
+    color: #f6dcff;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Kalnia;
+    margin: -72px 0px 40px 0px;
+}
+
+.icon-number-2{
+    font-size: 40px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    margin: -94px 26px 10px -109px;
+}
+
+.icon-number-2 i{
+    margin-right: 20px;
+    display: flex;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #FFFFFF;
+    background-color: #e4b0f6;
+    border-radius: 100px 100px 30px 100px;
+    font-family: oi;
+    font-style: normal;
+    font-weight: 900;
+    justify-content: center;
+}
+
+.title-details-about-us-2{
+    color: #e4b0f6;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Kalnia;
+    margin: -72px 0px 40px 0px;
+}
+
+.icon-number-right-3{
+    font-size: 40px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    margin: -94px 26px 10px -109px;
+}
+
+.icon-number-right-3 i{
+    margin-right: 20px;
+    display: flex;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #FFFFFF;
+    background-color: #da90f3;
+    border-radius: 100px 100px 30px 100px;
+    font-family: oi;
+    font-style: normal;
+    font-weight: 900;
+    justify-content: center;
+}
+
+.title-details-about-us-3{
+    color: #da90f3;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Kalnia;
+    margin: -72px 0px 40px 0px;
+}
+
+.icon-number-right-5{
+    font-size: 40px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    margin: -94px 26px 10px -109px;
+}
+
+.icon-number-right-5 i{
+    margin-right: 20px;
+    display: flex;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #FFFFFF;
+    background-color: #bf3aec;
+    border-radius: 100px 100px 30px 100px;
+    font-family: oi;
+    font-style: normal;
+    font-weight: 900;
+    justify-content: center;
+}
+
+.title-details-about-us-5{
+    color: #bf3aec;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Kalnia;
+    margin: -72px 0px 40px 0px;
+}
+
+.listing-book-identification2{
+    margin-top: 65px;
+}
+
+@media screen and (max-width: 768px){
+    .banner{
+        display: block;
+    }
+}
