@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchanted Pages</title>  
+    <link href="./Assets/css/main.css" rel="stylesheet" />
+    <script src="./Assets/js/main.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Iníco topbar-->
+    
+            <div class="topbar">
+                <div class="wrapper flex">
+                    <div>
+                        <div class="phone-topbar">
+                            <a target="_blank" href="#">
+                                <img src="./Assets/images/topbar-icon1.svg" alt="">
+                            </a>
+                            <a target="_blank" href="https://wa.me/5515000000000?text=Ol%C3%A1%21%20Nos%20mande%20uma%20mensagem.%20Ser%C3%A1%20um%20prazer%20ajudar%20voc%C3%AA%21">(00) 00000-0000</a>
+                        </div>
+                        <div class="email-topbar">
+                            <a target="_blank" href="#">
+                                <img src="./Assets/images/topbar-icon2.svg" alt="">
+                            </a>
+                            <a target="_blank" href="mailto:email@email.com">email@email.com</a>
+                        </div>
+                    </div>
+                        <div>
+                            <a href="#">
+                                <img src="./Assets/images/topbar-icon3.svg" alt="">
+                            </a>
+                            <a href="#">Minha Conta</a>
+                        </div>
+                </div>
+            </div>
+        <!-- Fim topbar-->
+    
+    <!-- Início Searchbar -->
+    
+    <div class="searchbar">
+        <div class="wrapper flex">
+            <div class="logo-container">
+                <a href="./index.html">
+                <img class="logo" src="./Assets/images/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="search-group">
+                <input id="inputBusca" onkeyup="filtrar()" type="text" placeholder="Em que mundo você quer entrar hoje?">
+                <button>Pesquise</button>
+                    <ul id="listaProdutos">
+                    </ul>
+            </div>
+            <div class="wishlist">
+                <div>
+                    <a href="./favoritos.html">
+                        <img src="./Assets/images/searchbar-1.svg" alt="" title="Favoritos">
+                    </a>
+                </div>
+                <div>
+                    <a href="./carrinho.html">
+                        <img src="./Assets/images/searchbar-2.svg" alt="" title="Carrinho">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Fim Searchbar-->
+    
+    <!-- Início Navigation bar-->
+    
+    <div class="navigation-bar">
+        <div class="wrapper flex">
+            <div class="">
+                <a href="./index.html">Home</a>
+                <a href="./novidades.html">Novidades</a>
+                <a href="./listagem.html">Livros</a>
+                <a href="./acessorios.html">Acessórios</a>
+                <a href="./quem-somos.html">Quem somos</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Fim Navigation bar-->
+
+    <!-- Início MAIN-->
+    
+    <main>
+        <section class="banner">
+            <img src="./Assets/images/home image.svg" alt="">
+        </section>
+
+        <section class="highlights">
+            <div class="wrapper flex">
+                <a href="./acessorios.html">
+                    <img src="./Assets/images/menu-1.svg" alt="">
+                </a>
+                <a href="./novidades.html">
+                    <img src="./Assets/images/menu-2.svg" alt="">
+                </a>
+                <a href="./acessorios.html">
+                    <img src="./Assets/images/menu-3.svg" alt="">
+                </a>
+            </div>
+            
+        </section>
+  
+        <section class="main-list">
+            <div class="wrapper">
+                <h2 class="home-book-identification">Livros de Autoajuda:</h2>
+                <div class="list-products">
+                    <div class="products">
+                        <a href="./detalhes-habito.html">
+                            <img src="./Assets/images/Livro-1-home.svg" alt="">
+                            <p class="title">O poder do hábito</p>
+                            <p class="price">R$79,90</p>
+                        </a>
+                    </div>
+
+                    <div class="products">
+                        <a href="./detalhes-mindset.html">
+                            <img src="./Assets/images/Livro-2-home.svg" alt="">
+                            <p class="title">Mindset - A nova psicologia do sucesso</p>
+                            <p class="price">R$64,99</p>
+                        </a>
+                    </div>
+
+                    <div class="products">
+                        <a href="#">
+                            <img src="./Assets/images/Livro-3-home.svg" alt="">
+                            <p class="title">Os segredos da mente milionária</p>
+                            <p class="price">R$37,90</p>
+                        </a>
+                    </div>
+
+                    <div class="products">
+                        <a href="#">
+                            <img src="./Assets/images/Livro-4-nome.svg" alt="">
+                            <p class="title">Comece pelo Porquê</p>
+                            <p class="price">R$42,90</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        </div>
+    </main>
+    
+    <!--Fim MAIN-->
+    
+    <!--Início Footer-->
+    <footer>
+        <div class="wrapper flex">
+            <div>
+                <div class="logo-container">
+                    <a href="./index.html">
+                    <img src="./Assets/images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="navigation">
+                    <nav class="footer-menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./novidades.html">Novidades</a></li>
+                            <li><a href="./listagem.html">Livros</a></li>
+                            <li><a href="./acessorios.html">Acessórios</a></li>
+                            <li><a href="./quem-somos.html">Quem somos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div>
+                <div class="social-media-text">
+                    <p>Nos encontre em nossas redes sociais:</p>
+                    <p class="ep-media">@Enchanted_Pages</p>
+                </div>
+                <div class="social-media">
+                    <a target="_blank" href="https://wa.me/5515000000000?text=Ol%C3%A1%21%20Nos%20mande%20uma%20mensagem.%20Ser%C3%A1%20um%20prazer%20ajudar%20voc%C3%AA%21">
+                        <img src="./Assets/images/icon-whats.svg" alt="" title="Whatsapp">
+                    </a>
+
+                    <a target="_blank" href="https://www.instagram.com/"> 
+                        <img src="./Assets/images/icon-insta.svg" alt="" title="Instagram">
+                    </a>
+
+                    <a target="_blank" href="https://www.facebook.com/login/"> 
+                        <img src="./Assets/images/icon-facebook.svg" alt="" title="Facebook">
+                    </a>
+
+                    <a target="_blank" href="https://twitter.com/i/flow/login"> 
+                        <img src="./Assets/images/icon-x.svg" alt="" title="X">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!--Fim Footer-->
+    </body>
+    </head> 
+    </html>
+    
