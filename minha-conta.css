@@ -1,0 +1,48 @@
+.wrapper{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+body{
+    background-image: linear-gradient(to right, #E6C0F7, #ae2fdc);
+}
+
+.mc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 210px;
+    align-items: center;
+}
+
+.logo-img{
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img img{
+    width: 200px;
+    margin-top: 15px;
+}
+
+h1{
+    color: #fff;
+}
+
+h3, a{
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(31, 0, 153);
+}
+
+input{
+    width: 300px;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,31 @@
+.cadastro-concluido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 300px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 90px;
+    background-image: linear-gradient(to top, #E6C0F7, #af45d5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+h3{
+    font-size: 25px;
+    color: #4f4f4f;
+}
+
+a{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #6a6a6a;
+}
+
+a:hover{
+    color: #af45d5;
+}
